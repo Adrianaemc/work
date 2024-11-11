@@ -1,0 +1,244 @@
+.dropdown-menu {
+    position: absolute;
+    top: 100%; /* Asegura que esté justo debajo del header */
+    right: 10px; /* Ajusta según la posición de la campanita */
+    width: 300px; /* Ancho del menú de notificaciones */
+    max-height: 400px; /* Tamaño máximo para las notificaciones */
+    overflow-y: auto; /* Añadir scroll si las notificaciones superan el tamaño máximo */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none; /* Oculto por defecto */
+    z-index: 999; /* Asegúrate de que esté encima del contenido */
+}
+
+/* Mostrar el menú al hacer clic */
+.dropdown-menu.show {
+    display: block;
+}
+
+/* Estilo para las notificaciones no leídas */
+.notificacion-no-leida {
+    font-weight: bold;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+/* Estilo para notificaciones normales */
+.notificacion {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Hacer que el icono de notificaciones no empuje el contenido */
+#notificaciones {
+    position: relative;
+}
+
+/* Posicionar el número de notificaciones no leídas */
+#num_notificaciones {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 12px;
+    display: inline-block;
+}
+/* Estilos adicionales para el nav */
+nav {
+    background-color: #ffffffad;
+    padding: 10px;
+    display: flex; /* Alinear en una fila */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Alinea verticalmente */
+    gap: 15px; /* Espaciado entre elementos */
+}
+
+nav a {
+    color: #004aad;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+nav .nav-links a:hover {
+    text-decoration: underline;
+}
+
+.nav-item {
+    position: relative;
+    display: inline-flex; /* Alinea el icono y el badge correctamente */
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-item .fa-bell {
+    font-size: 24px;
+}
+
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    padding: 3px 6px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+}
+    
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.perfil-header {
+    display: flex;
+    align-items: flex-start; /* Alinea la imagen y el contenido en la parte superior */
+    margin-bottom: 20px;
+}
+
+.perfil-header img {
+    width: 150px; /* Aumentar el ancho de la imagen */
+    height: 150px; /* Aumentar la altura de la imagen */
+    border-radius: 50%;
+    margin-right: 20px;
+    cursor: pointer; /* Hacer que la imagen sea clickeable */
+}
+
+
+.perfil-header .info {
+    flex: 1;
+}
+
+.perfil-header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.perfil-header #sobre-mi {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.seccion-sobre-mi {
+    margin-top: 20px;
+}
+
+.seccion-sobre-mi h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.seccion-sobre-mi p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.seccion-experiencia,
+.seccion-educacion {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        flex-direction: column;
+    }
+
+    .seccion-experiencia,
+    .seccion-educacion {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+.seccion-busqueda {
+    position: relative;
+    display: flex;
+    align-items: center; /* Asegura que el formulario esté alineado verticalmente */
+    gap: 10px; /* Espacio entre el campo de búsqueda y los botones */
+    justify-content: center;
+}
+
+.busqueda-form {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin-top: 20px;
+}
+
+.busqueda-form input[type="text"] {
+    width: 50%; /* Ancho deseado */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 20px; 
+}
+
+.busqueda-form button {
+    padding: 10px 20px;
+    background-color: #3d7ec4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px; /* Aumenta este valor para mayor separación */
+}
+
+
+/* Estilos para secciones recomendadas y guardadas */
+.seccion-recomendaciones,
+.seccion-guardados {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.seccion-recomendaciones h3,
+.seccion-guardados h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.seccion-recomendaciones p,
+.seccion-guardados p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.seccion-busqueda h2 {
+display: flex;
+}
+

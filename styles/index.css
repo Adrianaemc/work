@@ -1,0 +1,101 @@
+/* Estilos personalizados */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Estilos del header */
+header {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.navbar-nav .nav-link {
+    color: #343a40;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-outline-primary {
+    border-color: #007bff;
+}
+
+
+/* Hero section con imagen de fondo */
+.hero {
+    position: relative;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/banner-index.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6; /* Ajusta la opacidad de la imagen */
+    z-index: 1;
+}
+
+.hero .text-center {
+    color:#007bff;
+    background-color: #f8f9fa91;
+    position: relative;
+    z-index: 2; /* El contenido estará por encima de la imagen */
+
+}
+
+.form-control {
+    max-width: 250px;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+/* Estilos para la sección de empresas */
+.empresas {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+.empresa-logo {
+    max-width: 100%;
+    height: auto;
+    margin: 10px; /* Espaciado entre logotipos */
+}
+
+/* Adaptabilidad de los logotipos */
+@media (max-width: 768px) {
+    .empresa-logo {
+        width: 80%; /* Ajusta el tamaño en pantallas pequeñas */
+    }
+}

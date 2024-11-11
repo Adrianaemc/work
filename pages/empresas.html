@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresas</title>
+    <link rel="stylesheet" href="../styles/pages-empresas.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="d-flex justify-content-between align-items-center p-3 bg-white shadow-sm">
+        <img src="../img/logo.png" alt="logo" class="logo">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.php">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Empresas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/candidatos.html"l>Candidatos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/novedades.html">Novedades</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div>
+            <a href="../login_empresa.php" class="btn btn-outline-primary me-3">Login empresas</a>
+            <a href="../login_postulante.php" class="btn btn-primary">¡Postúlate!</a>
+        </div>
+    </header>
+    
+    <main>
+        <section class="empresas">
+            <h2 class="text-center mt-5">Empresas que están contratando</h2>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <img src="../img/logo-accenture.png" alt="Accenture" class="empresa-logo">
+                        <p class="empresa-descripcion">Accenture es una empresa líder en servicios de consultoría y tecnología.</p>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <img src="../img/logo-farmacity.png" alt="Farmacity" class="empresa-logo">
+                        <p class="empresa-descripcion">Farmacity es una cadena de farmacias que ofrece una amplia gama de productos de salud y bienestar.</p>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <img src="../img/logo-globant.png" alt="Globant" class="empresa-logo">
+                        <p class="empresa-descripcion">Globant es una empresa tecnológica que se especializa en desarrollo de software y soluciones digitales.</p>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <img src="../img/logo-pepsico.png" alt="Pepsico" class="empresa-logo">
+                        <p class="empresa-descripcion">Pepsico es una multinacional de alimentos y bebidas, conocida por marcas como Pepsi, Lay's y Gatorade.</p>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <img src="../img/logo-cocacola.png" alt="Coca cola" class="empresa-logo">
+                        <p class="empresa-descripcion">Coca Cola es una empresa líder en la industria de bebidas no alcohólicas, reconocida mundialmente por sus refrescos.</p>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <img src="../img/logo-santander.png" alt="Santander" class="empresa-logo">
+                        <p class="empresa-descripcion">Santander es un banco global que ofrece servicios financieros y bancarios a clientes y empresas en todo el mundo.</p>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <img src="../img/logo-nike.png" alt="Nike" class="empresa-logo">
+                        <p class="empresa-descripcion">Nike es una empresa de indumentaria deportiva reconocida por sus innovadores productos de calzado, ropa y accesorios.</p>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <img src="../img/logo-Randstad.png" alt="Randstad Consultora" class="empresa-logo">
+                        <p class="empresa-descripcion">Randstad es una consultora de recursos humanos que conecta talento con oportunidades laborales en múltiples sectores.</p>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <img src="../img/logo-grupoG.png" alt="Grupo Gestion" class="empresa-logo">
+                        <p class="empresa-descripcion">Grupo Gestión ofrece soluciones integrales de recursos humanos, incluyendo selección, capacitación y outsourcing.</p>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <img src="../img/logo-starbucks.png" alt="Starbucks" class="empresa-logo">
+                        <p class="empresa-descripcion">Starbucks es la cadena de cafeterías más grande del mundo, conocida por su café premium y ambiente acogedor.</p>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <img src="../img/logo-adidas.png" alt="ADIDAS" class="empresa-logo">
+                        <p class="empresa-descripcion">Adidas es una empresa global de indumentaria deportiva que diseña y fabrica ropa, calzado y accesorios innovadores.</p>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <img src="../img/logo-amazon.png" alt="Amazon" class="empresa-logo">
+                        <p class="empresa-descripcion">Amazon es un gigante del comercio electrónico y servicios en la nube, que ofrece una amplia gama de productos y soluciones tecnológicas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="registro-empresas text-center py-5 bg-light">
+            <div class="container">
+                <h3 class="mb-4">¿Buscas al candidato ideal?</h3>
+                <p class="lead mb-4">Regístrate ahora y encuentra a los mejores talentos para tu empresa.</p>
+                <a href="../login_empresa.php" class="btn btn-primary btn-lg">Regístrate para encontrar a tu candidato ideal</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>Compañia</h3>
+                    <ul>
+                        <li><a href="#">Sobre nosotros</a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                    <div class="footer-logo">   
+                        <h3><img src="../img/logo.png" alt="logo"> </h3>
+                    </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2024 Workportal Todos los derechos reservados </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
